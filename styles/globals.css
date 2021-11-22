@@ -1,16 +1,41 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family: "GoogleSans-b";
+  src: url("/fonts/GoogleSans-Bold-v1.27.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "GoogleSans-m";
+  src: url("/fonts/GoogleSans-Medium-v1.27.ttf");
+  font-style: normal;
+  font-weight: medium;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+:root {
+  --white: #ffffff;
+  --black: #404040;
+  --green: #0f9d58;
+  --blue: #1a73e8;
+  --yellow: #f6ba17;
+  --red: #e84435;
+  --gray: #676c72;
+  --light-gray: #f8f9fa;
+}
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.title {
+  font-family: "GoogleSans-b";
+  font-size: 52px;
+  color: var(--black);
+}
+.para {
+  font-family: "GoogleSans-m";
+  font-size: 24px;
+  color: var(--black);
 }
