@@ -1,0 +1,17 @@
+.footer {
+	background-color: #bbdefb;
+	color: var(--gray);
+	box-sizing: border-box; /* this should be a global variable, makes using css a lot easier*/
+	padding: 20px;
+}
+
+.footer__logo {
+	text-align: center;
+}
+
+.footer__line {
+	border: none;
+	height: 1px;
+	background-color: var(--gray);
+	margin: 32px 0 28px 0;
+}
