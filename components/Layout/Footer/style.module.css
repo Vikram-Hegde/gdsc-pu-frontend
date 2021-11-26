@@ -15,3 +15,50 @@
 	background-color: var(--gray);
 	margin: 32px 0 28px 0;
 }
+
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer__media_links {
+	display: flex;
+	gap: 1rem;
+}
+
+.footer__joinus {
+	text-align: center;
+}
+
+.footer__head {
+	margin-bottom: 18px;
+}
+
+.footer__input {
+	border: none;
+	height: 40px;
+	border-radius: 20px;
+	padding: 0 5.5rem 0 1rem;
+}
+
+.footer__input:focus {
+	outline: 1px solid var(--blue);
+}
+
+.footer__form {
+	position: relative;
+}
+
+.footer__button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 5rem;
+	border: none;
+	background-color: var(--blue);
+	color: var(--white);
+	border-radius: 20px;
+	cursor: pointer;
+}
