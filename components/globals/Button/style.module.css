@@ -1,0 +1,33 @@
+.btn {
+  padding: 12px 24px;
+  margin: 4px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  /* box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.btn:hover {
+  filter: contrast(120%);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  filter: contrast(120%);
+  transform: scale(0.97);
+}
+.btnPrimary {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.btnSecondary {
+  background-color: var(--gray);
+  font-weight: 600;
+  color: var(--white);
+}
