@@ -1,56 +1,106 @@
+.footer * {
+	box-sizing: border-box;
+}
+
 .footer {
 	background-color: #bbdefb;
 	color: var(--gray);
 	box-sizing: border-box; /* this should be a global variable, makes using css a lot easier*/
-	padding: 20px;
+	padding: 1.25rem;
 }
 
-.footer__logo {
-	text-align: center;
+.footerWrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-.footer__line {
+.footerLogo {
+	position: relative; /* remove later*/
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.footerLogoText {
+	font-size: clamp(1.20rem, 5vw, 1.50rem);
+}
+
+.footerLogoText > small {
+	font-size: clamp(0.5rem, 5vw, 1rem);
+}
+
+.footerLine {
 	border: none;
 	height: 1px;
 	background-color: var(--gray);
-	margin: 32px 0 28px 0;
+	margin: 2rem 0 1.75rem 0;
+	opacity: .25;
 }
 
-.footer__wrapper {
+.footerSection {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	gap: 3rem;
 }
 
-.footer__media_links {
+.footerForm {
+	position: relative;
+}
+
+.footerLinksX {
 	display: flex;
 	gap: 1rem;
 }
 
-.footer__joinus {
+.footerLinks {
+	list-style-position: inside;
+	list-style-type: '› ';
+}
+
+.footerJoinUs {
 	text-align: center;
 }
 
-.footer__head {
-	margin-bottom: 18px;
+@media (max-width: 510px) {
+	.footerJoinUs {
+		margin: 0 auto;
+	}
 }
 
-.footer__input {
+.footerHead {
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+	font-size: clamp(1rem, 5vw, 1.25rem);
+}
+
+.footerInput {
+	font: inherit;
+	font-size: 0.875rem;
 	border: none;
-	height: 40px;
-	border-radius: 20px;
+	height: 2.5rem;
+	border-radius: 1.25rem;
 	padding: 0 5.5rem 0 1rem;
 }
 
-.footer__input:focus {
-	outline: 1px solid var(--blue);
+.footerInput:focus {
+	outline: 2px solid var(--blue);
+	outline-offset: 2px;
 }
 
-.footer__form {
-	position: relative;
+@media (max-width: 360px) {
+	.footerWrapper {
+		gap: 1rem;
+	}
+	.footerInput {
+		width: 100%;
+	}
 }
 
-.footer__button {
+.footerButton {
+	font:inherit;
+	font-size: 0.875rem;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -59,6 +109,6 @@
 	border: none;
 	background-color: var(--blue);
 	color: var(--white);
-	border-radius: 20px;
+	border-radius: 1.25rem;
 	cursor: pointer;
 }
