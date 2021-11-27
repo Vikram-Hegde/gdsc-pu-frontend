@@ -1,13 +1,17 @@
 import styles from "./style.module.css";
 import Image from "next/image";
 
-
 const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.footerWrapper}>
 				<div className={styles.footerLogo}>
-					<Image src='/assets/icons/gdsc_logo.png' layout="fixed" width={50} height={25} />
+					<Image
+						src="/assets/icons/gdsc_logo.png"
+						layout="fixed"
+						width={50}
+						height={25}
+					/>
 					<div className={styles.footerLogoText}>
 						Google Developer Students Club
 						<br />
@@ -43,16 +47,36 @@ const Footer = () => {
 						<div className={styles.footerHead}>Social Media</div>
 						<div className={styles.footerLinksX}>
 							<a target="_blank" href="https://rebrand.ly/gdsc-pu-insta">
-								<Image src='/assets/icons/instagram.png' width={24} height={24} layout="fixed" />
+								<Image
+									src="/assets/icons/instagram.png"
+									width={24}
+									height={24}
+									layout="fixed"
+								/>
 							</a>
 							<a target="_blank" href="https://rebrand.ly/gdsc-pu-twitter">
-								<Image src='/assets/icons/Twitter.png' layout="fixed" width={24} height={24} />
+								<Image
+									src="/assets/icons/Twitter.png"
+									layout="fixed"
+									width={24}
+									height={24}
+								/>
 							</a>
 							<a target="_blank" href="https://rebrand.ly/gdsc-pu-discord">
-								<Image src='/assets/icons/discord.png' layout="fixed" width={24} height={24} />
+								<Image
+									src="/assets/icons/discord.png"
+									layout="fixed"
+									width={24}
+									height={24}
+								/>
 							</a>
 							<a target="_blank" href="https://rebrand.ly/gdsc-pu-linkedin">
-								<Image src='/assets/icons/Linkedin.png' layout="fixed" width={24} height={24} />
+								<Image
+									src="/assets/icons/Linkedin.png"
+									layout="fixed"
+									width={24}
+									height={24}
+								/>
 							</a>
 						</div>
 					</div>
