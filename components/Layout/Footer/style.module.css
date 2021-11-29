@@ -1,17 +1,16 @@
-.footer * {
-	box-sizing: border-box;
-}
-
 .footer {
 	background-color: #bbdefb;
 	color: var(--gray);
-	box-sizing: border-box; /* this should be a global variable, makes using css a lot easier*/
 	padding: 1.25rem;
+}
+
+.footer, .footer * {
+	box-sizing: border-box; /* should be added in global css, makes writing css a lot easier.*/
 }
 
 .footerWrapper {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1200px; /* should be added global css as a variable, since design is of max width close to 1200px*/
 	margin: 0 auto;
 }
 
@@ -59,10 +58,11 @@
 }
 
 .footerJoinUs {
+	--btn-width: 5rem;
 	text-align: center;
 }
 
-@media (max-width: 510px) {
+@media (max-width: 525px) {
 	.footerJoinUs {
 		margin: 0 auto;
 	}
@@ -80,7 +80,7 @@
 	border: none;
 	height: 2.5rem;
 	border-radius: 1.25rem;
-	padding: 0 5.5rem 0 1rem;
+	padding: 0 calc(var(--btn-width) + 0.5rem) 0 1rem;
 }
 
 .footerInput:focus {
@@ -104,7 +104,7 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-	width: 5rem;
+	width: var(--btn-width);
 	border: none;
 	background-color: var(--blue);
 	color: var(--white);
