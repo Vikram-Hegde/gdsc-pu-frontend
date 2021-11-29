@@ -2,15 +2,18 @@ import React from "react";
 import Footer from "../Footer";
 import Meta from "../Meta";
 import Navbar from "../Navbar";
+import style from "./style.module.css";
 
 const PageWrapper = ({ children, title, description }) => {
   return (
-    <>
-      <Meta title={title} description={description} />
-      <Navbar />
-      {children}
-      <Footer />
-    </>
+    <div className={style.outer}>
+      <div className={style.inner}>
+        <Meta title={title} description={description} />
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
+    </div>
   );
 };
 
