@@ -70,6 +70,10 @@
   font-weight: 500;
   color: var(--black);
 }
+.navItemWrapper {
+  display: flex;
+  align-items: center;
+}
 
 @media only screen and (max-width: 768px) {
   .navMenu {
