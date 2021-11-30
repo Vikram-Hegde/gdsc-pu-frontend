@@ -20,19 +20,29 @@
   --red: #e84435;
   --gray: #676c72;
   --light-gray: #f8f9fa;
+  --xs-font: 16px;
+  --s-font: 18px;
+  --m-font: 24px;
+  --l-font: 42px;
 }
 * {
   margin: 0;
   padding: 0;
   font-family: "GoogleSans-m";
 }
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 .title {
   font-family: "GoogleSans-b";
-  font-size: 52px;
+  font-size: var(--l-font);
   color: var(--black);
 }
 .para {
   font-family: "GoogleSans-m";
-  font-size: 24px;
+  font-size: var(--m-font);
   color: var(--black);
 }
