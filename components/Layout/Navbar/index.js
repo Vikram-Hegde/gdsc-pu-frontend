@@ -50,54 +50,60 @@ const Navbar = () => {
             open ? style.navMenuActive : ""
           }`}
         >
-          {/* <Link href="/" passHref>
-            <div className={style.logoWrapper}>
-              <div className={style.logoLeft}>
-                <Image
-                  src="/assets/icons/gdsc_logo.png"
-                  layout="intrinsic"
-                  objectFit="contain"
-                  alt="GDSC Logo"
-                  width="50px"
-                  height="20px"
-                />
-              </div>
-              <div className={style.logoRight}>
-                <a className={style.navLink}>
-                  Google Developer Student Clubs
-                  <p>Presidency University Bengaluru</p>
-                </a>
+          <div className={style.mobileNavMenuWrapper}>
+            <div className={style.mobileNavbarWrapper}>
+              <Link href="/" passHref>
+                <div className={style.mobileLogoWrapper}>
+                  <div className={style.logoLeft}>
+                    <Image
+                      src="/assets/icons/gdsc_logo.png"
+                      layout="intrinsic"
+                      objectFit="contain"
+                      alt="GDSC Logo"
+                      width="50px"
+                      height="20px"
+                    />
+                  </div>
+                  <div className={style.logoRight}>
+                    <a className={style.navLink}>
+                      Google Developer Student Clubs
+                      <p>Presidency University Bengaluru</p>
+                    </a>
+                  </div>
+                </div>
+              </Link>
+
+              <div className={style.hamburger} onClick={menuClick}>
+                <span
+                  className={`${style.bar + " "}${open ? style.barActive : ""}`}
+                ></span>
+                <span
+                  className={`${style.bar + " "}${open ? style.barActive : ""}`}
+                ></span>
+                <span
+                  className={`${style.bar + " "}${open ? style.barActive : ""}`}
+                ></span>
               </div>
             </div>
-          </Link> */}
 
-          {/* <div className={style.hamburger} onClick={menuClick}>
-            <span
-              className={`${style.bar + " "}${open ? style.barActive : ""}`}
-            ></span>
-            <span
-              className={`${style.bar + " "}${open ? style.barActive : ""}`}
-            ></span>
-            <span
-              className={`${style.bar + " "}${open ? style.barActive : ""}`}
-            ></span>
-          </div> */}
-
-          <li className={style.navItem}>
-            <Link href="/" onClick={linkCloseMenu}>
-              <a className={style.navLink}>Home</a>
-            </Link>
-          </li>
-          <li className={style.navItem}>
-            <Link href="/team" onClick={linkCloseMenu}>
-              <a className={style.navLink}>Our Team</a>
-            </Link>
-          </li>
-          <li className={style.navItem} onClick={linkCloseMenu}>
-            <Link href="/" passHref>
-              <Button text="Join Us" variant="primary" />
-            </Link>
-          </li>
+            <div className={style.navItemWrapper}>
+              <li className={style.navItem}>
+                <Link href="/" onClick={linkCloseMenu}>
+                  <a className={style.navLink}>Home</a>
+                </Link>
+              </li>
+              <li className={style.navItem}>
+                <Link href="/team" onClick={linkCloseMenu}>
+                  <a className={style.navLink}>Our Team</a>
+                </Link>
+              </li>
+              <li className={style.navItem} onClick={linkCloseMenu}>
+                <Link href="/" passHref>
+                  <Button text="Join Us" variant="primary" />
+                </Link>
+              </li>
+            </div>
+          </div>
         </ul>
 
         <div className={style.hamburger} onClick={menuClick}>
