@@ -37,10 +37,10 @@ const Footer = () => {
 					</div>
 					<div className="footerQuickLinks">
 						<div className={styles.footerHead}>Quick Links</div>
-						<ul className={styles.footerLinks}>
-							<li>About DSC</li>
-							<li>Privacy</li>
-							<li>Terms</li>
+						<ul>
+							<li className={styles.footerLink}>About DSC</li>
+							<li className={styles.footerLink}>Privacy</li>
+							<li className={styles.footerLink}>Terms</li>
 						</ul>
 					</div>
 					<div className={styles.footerSocial}>

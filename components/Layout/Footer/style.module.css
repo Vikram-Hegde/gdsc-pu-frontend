@@ -1,7 +1,14 @@
 .footer {
 	background-color: #bbdefb;
 	color: var(--gray);
-	padding: 1.25rem;
+	margin-left: calc(50% - 50vw);
+	width: 100vw;
+	padding: 1.25rem 0;
+}
+
+.footerWrapper {
+	max-width: 90%;
+	margin: 0 auto;
 }
 
 .footer, .footer * {
@@ -46,9 +53,9 @@
 	gap: 1rem;
 }
 
-.footerLinks {
+.footerLink {
+	list-style-type: disclosure-closed;
 	list-style-position: inside;
-	list-style-type: "› ";
 }
 
 .footerJoinUs {
@@ -56,9 +63,10 @@
 	text-align: center;
 }
 
-@media (max-width: 525px) {
-	.footerJoinUs {
-		margin: 0 auto;
+@media (max-width: 802px) {
+	.footerSection {
+		flex-direction: column;
+		align-items: flex-start;
 	}
 }
 
