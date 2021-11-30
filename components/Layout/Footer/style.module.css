@@ -1,0 +1,118 @@
+.footer {
+	background-color: #bbdefb;
+	color: var(--gray);
+	margin-left: calc(50% - 50vw);
+	width: 100vw;
+	padding: 1.25rem 0;
+}
+
+.footerWrapper {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.footer, .footer * {
+	box-sizing: border-box; /* should be added in global css, makes writing css a lot easier.*/
+}
+
+.footerLogo {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.footerLogoText {
+	font-size: clamp(var(--s-font), 5vw, var(--m-font));
+}
+
+.footerLogoText > small {
+	font-size: clamp(var(--xs-font), 5vw, var(--s-font));
+}
+
+.footerLine {
+	border: none;
+	height: 1px;
+	background-color: var(--gray);
+	margin: 2rem 0 1.75rem 0;
+	opacity: 0.25;
+}
+
+.footerSection {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 3rem;
+}
+
+.footerForm {
+	position: relative;
+}
+
+.footerLinksX {
+	display: flex;
+	gap: 1rem;
+}
+
+.footerLink {
+	list-style-type: disclosure-closed;
+	list-style-position: inside;
+}
+
+.footerJoinUs {
+	--btn-width: 5rem;
+	text-align: center;
+}
+
+@media (max-width: 802px) {
+	.footerSection {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.footerJoinUs {
+		text-align: left;
+	}
+}
+
+.footerHead {
+	margin-bottom: 1rem;
+	font-size: clamp(var(--xs-font), 3vw, var(--m-font));
+}
+
+.footerInput {
+	font: inherit;
+	font-size: var(--xs-font);
+	border: none;
+	height: 2.5rem;
+	border-radius: 1.25rem;
+	padding: 0 calc(var(--btn-width) + 0.5rem) 0 1rem;
+}
+
+.footerInput:focus {
+	outline: 2px solid var(--blue);
+	outline-offset: 2px;
+}
+
+@media (max-width: 360px) {
+	.footerWrapper {
+		gap: 1rem;
+	}
+	.footerInput {
+		width: 100%;
+	}
+}
+
+.footerButton {
+	font: inherit;
+	font-size: var(--xs-font);
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: var(--btn-width);
+	border: none;
+	background-color: var(--blue);
+	color: var(--white);
+	border-radius: 1.25rem;
+	cursor: pointer;
+}
