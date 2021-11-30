@@ -15,11 +15,11 @@
 }
 
 .footerLogoText {
-	font-size: clamp(1.2rem, 5vw, 1.5rem);
+	font-size: clamp(var(--s-font), 5vw, var(--m-font));
 }
 
 .footerLogoText > small {
-	font-size: clamp(0.5rem, 5vw, 1rem);
+	font-size: clamp(var(--xs-font), 5vw, var(--s-font));
 }
 
 .footerLine {
@@ -64,13 +64,12 @@
 
 .footerHead {
 	margin-bottom: 1rem;
-	font-size: 1.25rem;
-	font-size: clamp(1rem, 5vw, 1.25rem);
+	font-size: clamp(var(--xs-font), 5vw, var(--m-font));
 }
 
 .footerInput {
 	font: inherit;
-	font-size: 0.875rem;
+	font-size: var(--xs-font);
 	border: none;
 	height: 2.5rem;
 	border-radius: 1.25rem;
@@ -93,7 +92,7 @@
 
 .footerButton {
 	font: inherit;
-	font-size: 0.875rem;
+	font-size: var(--xs-font);
 	position: absolute;
 	right: 0;
 	top: 0;
