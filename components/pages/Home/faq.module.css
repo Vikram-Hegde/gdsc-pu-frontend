@@ -9,7 +9,7 @@
 }
 
 .faqTitle {
-	font-size: 2rem;
+	font-size: var(--m-font);
 	font-weight: bold;
 	margin-bottom: 20px;
 }
