@@ -1,0 +1,33 @@
+.accordianItem {
+	color: var(--black);
+	border-bottom: 1px solid rgba(103, 108, 114, 0.5);
+}
+
+.accordianItem:not(:first-child) {
+	margin-top: 0.8rem;
+}
+
+.accordianQuestionWrapper {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	height: 2.5rem;
+}
+
+.accordianQuestion {
+	font-size: var(--s-font);
+}
+
+.accordianIndicator {
+	font-family: monospace;
+	font-size: var(--m-font);
+	font-weight: bold;
+	color: var(--blue);
+}
+
+.accordianAnswer {
+	font-size: var(--xs-font);
+	margin-left: 1rem;
+	max-width: 300px;
+	margin-bottom: 0.8rem;
+}

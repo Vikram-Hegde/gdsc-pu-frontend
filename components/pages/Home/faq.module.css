@@ -1,0 +1,29 @@
+.faq, .faq > * {
+	box-sizing: border-box;
+}
+
+.faqWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.faqTitle {
+	font-size: var(--m-font);
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.faqWrapper > * {
+	flex: 0 1 50%;
+}
+
+@media (max-width: 650px) {
+	.faqWrapper {
+		display: block;
+	}
+
+	.faqImage > * {
+		width: 100%;
+	}
+}
