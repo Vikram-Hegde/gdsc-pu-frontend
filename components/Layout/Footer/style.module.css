@@ -68,11 +68,15 @@
 		flex-direction: column;
 		align-items: flex-start;
 	}
+
+	.footerJoinUs {
+		text-align: left;
+	}
 }
 
 .footerHead {
 	margin-bottom: 1rem;
-	font-size: clamp(var(--xs-font), 5vw, var(--m-font));
+	font-size: clamp(var(--xs-font), 3vw, var(--m-font));
 }
 
 .footerInput {
