@@ -13,7 +13,6 @@
 
 .footer, .footer * {
 	box-sizing: border-box; /* should be added in global css, makes writing css a lot easier.*/
-	outline: 1px solid red;
 }
 
 .footerLogo {
