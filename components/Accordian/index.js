@@ -28,7 +28,7 @@ export default function Accordian() {
 	const [visible, toggleVisible] = useState(0);
 
 	const handleVisibility = (index) =>
-		index === visible ? toggleVisible(null) : toggleVisible(index);
+		toggleVisible(index === visible ? -1 : index);
 
 	return (
 		<div className="accordianGroup">
