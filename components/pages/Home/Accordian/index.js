@@ -27,6 +27,9 @@ const qa = [
 export default function Accordian() {
 	const [visible, toggleVisible] = useState(0);
 
+	const handleVisibility = (index) =>
+		toggleVisible(index === visible ? -1 : index);
+
 	return (
 		<div className="accordianGroup">
 			{qa.map(({ question, answer }, index) => {
@@ -34,7 +37,7 @@ export default function Accordian() {
 					<div
 						className={styles.accordianItem}
 						key={index}
-						onClick={() => toggleVisible(index)}
+						onClick={() => handleVisibility(index)}
 					>
 						<div className={styles.accordianQuestionWrapper}>
 							<div className={styles.accordianQuestion}>{question}</div>
