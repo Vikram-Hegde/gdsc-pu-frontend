@@ -1,0 +1,69 @@
+
+.menu li{
+    display: inline-block;
+    width: 350px;
+    height: 199px;
+    padding-left: 50px;
+  }
+.menu p{
+    font-size: small;
+    padding-top: 2.5%;
+}
+.menu h4{
+    
+    
+    
+    padding-top: 5%;
+}
+.menu .cloudtitle{
+    background-color: #BBDEFB;
+    width: fit-content;
+    height: fit-content;
+    
+    color: #60A1F0;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+}
+.menu .webtitle{
+    background-color: #FFECB3;
+    width: fit-content;
+    height: fit-content;
+    color: #F9CA48;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+}
+.menu .designtitle{
+    background-color: #FFCDD2;
+    width: fit-content;
+    height: fit-content;
+    color: #E84435;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+}
+.menu .apptitle{
+    background-color: #C8E6C9;
+    width: fit-content;
+    height: fit-content;
+    color: #3DAF74;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+}
+.menu .blockchaintitle{
+    background-color: #FFECB3;
+    width: fit-content;
+    height: fit-content;
+    color: #F6BA17;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+}
+  
