@@ -1,6 +1,7 @@
 import PageWrapper from "../components/Layout/PageWrapper";
 import Button from "../components/globals/Button";
 import FaqSection from "../components/pages/Home/FaqSection";
+import WhatWeDo from "../components/pages/Home/whatwedo"
 export default function Home() {
   return (
     <PageWrapper
@@ -8,7 +9,9 @@ export default function Home() {
       description="Homepage GDSC presidency university"
     >
       <h1>HomePage</h1>
+      <WhatWeDo/>
 			<FaqSection />
+      
     </PageWrapper>
   );
 }
