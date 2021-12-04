@@ -1,5 +1,5 @@
 import styles from "./faq.module.css";
-import Accordian from "../../Accordian";
+import Accordian from "./Accordian";
 import Image from "next/image";
 
 export default function FaqSection() {
