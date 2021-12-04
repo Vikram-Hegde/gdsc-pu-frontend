@@ -8,7 +8,7 @@ export default function Home() {
       description="Homepage GDSC presidency university"
     >
       <h1>HomePage</h1>
-			<FaqSection />
+      <FaqSection />
     </PageWrapper>
   );
 }
