@@ -22,7 +22,6 @@ export default function Home() {
           aboutimg="/assets/illustrations/blogging.png"
         />
         <WhatWeDo/>
-
       <FaqSection />
     </PageWrapper>
   );

@@ -6,14 +6,16 @@ import style from "./style.module.css";
 
 const PageWrapper = ({ children, title, description }) => {
   return (
-    <div className={style.outer}>
-      <div className={style.inner}>
-        <Meta title={title} description={description} />
-        <Navbar />
-        {children}
-        <Footer />
+    <>
+      <div className={style.outer}>
+        <div className={style.inner}>
+          <Meta title={title} description={description} />
+          <Navbar />
+          {children}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
