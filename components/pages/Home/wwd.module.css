@@ -5,13 +5,18 @@
     height: 199px;
     padding-left: 50px;
   }
-.menu p{
-    font-size: small;
+  .menu p{
+    font-size: var(--s-font);
     padding-top: 2.5%;
+    color: var(--black);
+}
+.menu h1 {
+    font-size: var(--l-font);
+    color: var(--black);
 }
 .menu h4{
     
-    
+    color: var(--black);
     
     padding-top: 5%;
 }
