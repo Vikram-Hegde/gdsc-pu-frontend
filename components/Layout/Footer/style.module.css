@@ -2,7 +2,7 @@
   background-color: #bbdefb;
   color: var(--gray);
   width: 100%;
-  padding: 1.25rem 0;
+  padding: clamp(1.5rem, 5vh, 3rem) 0;
 }
 
 .footerWrapper {
@@ -23,10 +23,13 @@
 
 .footerLogoText {
   font-size: clamp(var(--s-font), 5vw, var(--m-font));
+  line-height: 1;
 }
 
 .footerLogoText > small {
   font-size: clamp(var(--xs-font), 5vw, var(--s-font));
+  display: inline-block;
+  margin-top: 0.5rem;
 }
 
 .footerLine {
@@ -39,7 +42,7 @@
 
 .footerSection {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* will be changed after we add quick links and form*/
   flex-wrap: wrap;
   gap: 3rem;
 }
@@ -66,7 +69,7 @@
 @media (max-width: 802px) {
   .footerSection {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* will be changed after we add quick links and form*/
   }
 
   .footerJoinUs {
