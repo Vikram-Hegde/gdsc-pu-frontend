@@ -15,7 +15,7 @@ const team = () => {
     <Hero
       title="Google Developer Student Clubs" 
       subtitle="Presidency University Bengaluru"
-      logosource="/assets/icons/gdsc_logo.png"
+      logosource="/assets/icons/gdsc_logo_single.png"
       heroimg="/assets/illustrations/web-development.png"
     />
 

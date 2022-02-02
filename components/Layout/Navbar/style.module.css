@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid var(--gray);
@@ -11,9 +12,9 @@
 .logoLeft {
   margin-right: 5px;
 }
-/* .logoRight {
-  
-} */
+.logoLeftMobile {
+  display: none;
+ }
 
 .navbar {
   width: 100%;
@@ -79,8 +80,8 @@
   .navMenu {
     z-index: 99;
     position: fixed;
-    left: -100%;
-    top: 0;
+    right: -100%;
+    top: 102px;
     flex-direction: column;
     background-color: var(--white);
     width: 100%;
@@ -91,7 +92,7 @@
     /* padding: 1rem 1rem; */
   }
   .navMenuActive {
-    left: 0;
+    right: 0;
   }
   .mobileNavMenuWrapper {
     position: relative;
@@ -110,6 +111,12 @@
   .mobileLogoWrapper {
     display: flex;
   }
+  .logoLeft {
+    display: none;
+   }
+   .logoLeftMobile {
+    display: block;
+   }
   .logoRight {
     text-align: left;
   }
