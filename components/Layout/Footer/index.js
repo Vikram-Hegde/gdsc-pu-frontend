@@ -7,7 +7,7 @@ const Footer = () => {
       <div className={styles.footerWrapper}>
         <div className={styles.footerLogo}>
           <Image
-            src="/assets/icons/gdsc_logo.png"
+            src="/assets/icons/gdsc_logo_single.png"
             layout="fixed"
             width={50}
             height={25}

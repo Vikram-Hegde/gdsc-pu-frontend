@@ -3,7 +3,7 @@
     display: inline-block;
     width: 350px;
     height: 199px;
-    padding-left: 50px;
+    padding-left: 0px;
   }
   .menu p{
     font-size: var(--s-font);
