@@ -1,7 +1,6 @@
 .footer {
   background-color: #bbdefb;
   color: var(--gray);
-  margin-left: calc(50% - 50vw);
   width: 100%;
   padding: 1.25rem 0;
 }

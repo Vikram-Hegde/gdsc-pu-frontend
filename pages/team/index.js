@@ -4,6 +4,8 @@ import style from "./style.module.css";
 import Hero from "../../components/pages/Home/Hero"
 import About from "../../components/pages/Home/About"
 import Team from "../../components/pages/Team";
+import Tabs from './Tabs';
+import {members, categories} from './Tabs/memberData';
 
 const team = () => {
   return (
@@ -29,6 +31,7 @@ const team = () => {
 
         
 
+    <Tabs members={members} categories={categories} />
     </PageWrapper>
   );
 };
