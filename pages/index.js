@@ -12,6 +12,7 @@ export default function Home() {
         <Hero 
          title="Google Developer Student Clubs" 
          subtitle="Presidency University Bengaluru"
+         mobtitle="GDSC"
          logosource="/assets/icons/gdsc_logo.png"
          heroimg="/assets/illustrations/web-development.png"
         />

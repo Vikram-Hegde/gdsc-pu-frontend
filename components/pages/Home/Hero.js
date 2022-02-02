@@ -4,12 +4,13 @@ import heroStyle from "./hero.module.css"
 
 
 
-const Hero = ({title, subtitle, logosource, heroimg}) => {
+const Hero = ({title, mobtitle, subtitle, logosource, heroimg}) => {
     return (
         <div className={heroStyle.main}>
             <div className={heroStyle.left}>
                <img className={heroStyle.leftimg} src={logosource}/>
-                <h1 className={heroStyle.title}>{title}</h1>
+                <span className={heroStyle.title}>{title}</span>
+                <span className={heroStyle.mob_title}>{mobtitle}</span>
                 <p className={heroStyle.para}>{subtitle}</p>
                 <Button text="Join Us" variant="primary"/>
             </div>

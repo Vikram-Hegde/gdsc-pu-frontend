@@ -6,12 +6,12 @@
 .left {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 150px;
     flex: 50%;
 }
+
 
 .leftimg{ 
     height: 150px;
@@ -19,6 +19,15 @@
 }
 
 .title {
+    font-family: "GoogleSans-b";
+    font-size: var(--l-font);
+    color: var(--gray);
+    margin: 20px 0;
+}
+
+
+.mob_title {
+    display: none;
     font-family: "GoogleSans-b";
     font-size: var(--l-font);
     color: var(--gray);
@@ -52,7 +61,11 @@
        margin: 30px 0;
        height: auto;
     }
-    
+
+    .title {
+       margin: 0;
+    }
+
     .left {
         padding-top: 40px;
     }
@@ -65,3 +78,15 @@
         height: 75px;
     }
 }    
+
+
+    
+@media screen and (max-width:720px) {
+    .title {
+        display: none;
+    }
+
+    .mob_title {
+        display: block;
+    }
+}

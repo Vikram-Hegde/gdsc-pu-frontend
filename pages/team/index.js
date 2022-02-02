@@ -3,6 +3,8 @@ import PageWrapper from "../../components/Layout/PageWrapper";
 import style from "./style.module.css";
 import Hero from "../../components/pages/Home/Hero"
 import About from "../../components/pages/Home/About"
+import Team from "../../components/pages/Team";
+
 const team = () => {
   return (
     <PageWrapper
@@ -11,16 +13,21 @@ const team = () => {
     >
     <Hero
       title="Google Developer Student Clubs" 
+      mobtitle= "GDSC"
       subtitle="Presidency University Bengaluru"
       logosource="/assets/icons/gdsc_logo.png"
-      heroimg="/assets/illustrations/web-development.png"
+      heroimg="/assets/illustrations/helping-each-other.svg"
     />
 
     <About 
-          title="Meet the Team"
-          subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi alias non culpa dolore repellendus quidem impedit blanditiis mollitia officiis unde quos hic, dolorum nisi quisquam? Animi cumque ut ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos atque quam fuga laborum. Quo similique facere culpa eaque quasi facilis officiis ipsa vero modi repellat possimus eius pariatur, vel odit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora saepe ut quia mollitia corrupti eaque in voluptatem temporibus quo id. Illo doloribus blanditiis debitis officiis pariatur rem saepe impedit iusto!"
-          aboutimg="/assets/illustrations/business-meeting.png"
+        title="Meet the Team"
+        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi alias non culpa dolore repellendus quidem impedit blanditiis mollitia officiis unde quos hic, dolorum nisi quisquam? Animi cumque ut ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos atque quam fuga laborum. Quo similique facere culpa eaque quasi facilis officiis ipsa vero modi repellat possimus eius pariatur, vel odit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora saepe ut quia mollitia corrupti eaque in voluptatem temporibus quo id. Illo doloribus blanditiis debitis officiis pariatur rem saepe impedit iusto!"
+        aboutimg="/assets/illustrations/business-meeting.png"
         />
+    <Team />
+        
+
+        
 
     </PageWrapper>
   );
