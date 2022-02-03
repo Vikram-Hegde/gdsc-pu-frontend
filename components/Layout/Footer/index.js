@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
         <hr className={styles.footerLine} />
         <div className={styles.footerSection}>
-          <div className={styles.footerJoinUs}>
+          {/* <div className={styles.footerJoinUs}>
             <div className={styles.footerHead}>Lorem ipsum dolor emet</div>
             <form className={styles.footerForm}>
               <input
@@ -42,7 +42,7 @@ const Footer = () => {
               <li className={styles.footerLink}>Privacy</li>
               <li className={styles.footerLink}>Terms</li>
             </ul>
-          </div>
+          </div> */}
           <div className={styles.footerSocial}>
             <div className={styles.footerHead}>Social Media</div>
             <div className={styles.footerLinksX}>
