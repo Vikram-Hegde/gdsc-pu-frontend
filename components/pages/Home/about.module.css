@@ -1,8 +1,11 @@
 
 .about {
-    margin: 20px 10px;
-    height: 60vh;
+    margin: 80px 0px;
+    height: 70vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
 }
 
 .leftabout {
@@ -13,7 +16,7 @@
 
 .abouttitle{
     font-size: var(--l-font);
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     color: var(--black);
 }
 
@@ -22,6 +25,7 @@
     line-height: 30px;
     font-size: var(--m-font);
     text-align: justify;
+    width: 90%;
 }
 
 .rightabout {
@@ -31,8 +35,8 @@
 }
 
 .aboutimg {
-    height: 70%;
-    width: 70%;
+    height: auto;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -47,6 +51,7 @@
 
     .aboutpara{ 
         padding: 0;
+        width: auto;
         font-size: var(--s-font)
     }
     
@@ -60,4 +65,3 @@
         width: 100%;
     }
 }
-    
