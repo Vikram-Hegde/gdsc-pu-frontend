@@ -33,16 +33,26 @@ const Navbar = () => {
                 layout="intrinsic"
                 objectFit="contain"
                 alt="GDSC Logo"
+                width="350px"
+                height="250px"
+              />
+            </div>
+            <div className={style.logoLeftMobile}>
+              <Image
+                src="/assets/icons/gdsc_logo_single.png"
+                layout="intrinsic"
+                objectFit="contain"
+                alt="GDSC Logo"
                 width="50px"
                 height="20px"
               />
             </div>
-            <div className={style.logoRight}>
+            {/* <div className={style.logoRight}>
               <a className={style.navLink}>
                 Google Developer Student Clubs
                 <p>Presidency University Bengaluru</p>
               </a>
-            </div>
+            </div> */}
           </div>
         </Link>
         <ul
@@ -51,7 +61,7 @@ const Navbar = () => {
           }`}
         >
           <div className={style.mobileNavMenuWrapper}>
-            <div className={style.mobileNavbarWrapper}>
+            {/* <div className={style.mobileNavbarWrapper}>
               <Link href="/" passHref>
                 <div className={style.mobileLogoWrapper}>
                   <div className={style.logoLeft}>
@@ -84,7 +94,7 @@ const Navbar = () => {
                   className={`${style.bar + " "}${open ? style.barActive : ""}`}
                 ></span>
               </div>
-            </div>
+            </div> */}
 
             <div className={style.navItemWrapper}>
               <li className={style.navItem}>

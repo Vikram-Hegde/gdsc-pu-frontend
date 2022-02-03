@@ -14,7 +14,7 @@ export default function Home() {
          title="Google Developer Student Clubs" 
          subtitle="Presidency University Bengaluru"
          mobtitle="GDSC"
-         logosource="/assets/icons/gdsc_logo.png"
+         logosource="/assets/icons/gdsc_logo_single.png"
          heroimg="/assets/illustrations/web-development.png"
         />
         <About 

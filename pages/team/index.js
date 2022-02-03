@@ -17,8 +17,8 @@ const team = () => {
       title="Google Developer Student Clubs" 
       mobtitle= "GDSC"
       subtitle="Presidency University Bengaluru"
-      logosource="/assets/icons/gdsc_logo.png"
       heroimg="/assets/illustrations/helping-each-other.svg"
+      logosource="/assets/icons/gdsc_logo_single.png"
     />
 
     <About 
