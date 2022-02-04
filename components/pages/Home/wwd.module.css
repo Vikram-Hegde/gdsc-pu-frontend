@@ -1,14 +1,18 @@
-
+.menu ul {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
 .menu li{
     display: inline-block;
-    width: 350px;
+    width: 25%;
     height: 199px;
-    padding-left: 0px;
+    margin:40px 70px 70px 0;
   }
-  .menu p{
-    font-size: var(--s-font);
+.menu p{
+    font-size: var(--m-font);
     padding-top: 2.5%;
-    color: var(--black);
+    color: var(--gray);
 }
 .menu h1 {
     font-size: var(--l-font);
@@ -71,4 +75,19 @@
     padding-bottom: 2.5%;
     padding-top: 2.5%;
 }
-  
+
+@media (max-width:1024px) {
+    .menu p{
+        font-size: var(--s-font);
+    }
+}
+
+@media (max-width:768px) {
+    .menu li{
+        width: 100%;
+        margin: 20px 0;
+      }
+    .menu p{
+        font-size: var(--s-font);
+    }
+}

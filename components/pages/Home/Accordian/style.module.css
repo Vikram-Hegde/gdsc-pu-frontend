@@ -15,7 +15,8 @@
 }
 
 .accordianQuestion {
-	font-size: var(--s-font);
+	font-size: var(--m-font);
+	color: var(--black);
 }
 
 .accordianIndicator {
@@ -26,8 +27,18 @@
 }
 
 .accordianAnswer {
-	font-size: var(--xs-font);
+	font-size: var(--s-font);
+	color:var(--gray);
 	margin-left: 1rem;
 	max-width: 300px;
 	margin-bottom: 0.8rem;
+}
+
+@media (max-width:768px) {
+	.accordianQuestion {
+		font-size: var(--s-font);
+	}
+	.accordianAnswer {
+		font-size: var(--xs-font);
+	}
 }

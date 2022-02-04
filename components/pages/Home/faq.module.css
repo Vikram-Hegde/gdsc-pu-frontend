@@ -17,6 +17,7 @@
 .faqTitle {
   font-size: var(--l-font);
   font-weight: bold;
+  color: var(--black);
 }
 
 .faqWrapper > * {
