@@ -45,7 +45,7 @@
 .right {
     display: flex;
     flex: 50%;
-    margin-bottom: 50px;
+    margin: 50px;
 }
 
 .rightimg {
@@ -88,5 +88,9 @@
 
     .mob_title {
         display: block;
+    }
+
+    .right {
+        margin: 0;
     }
 }
