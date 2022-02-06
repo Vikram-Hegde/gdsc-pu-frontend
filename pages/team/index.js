@@ -5,7 +5,7 @@ import Hero from "../../components/pages/Home/Hero"
 import About from "../../components/pages/Home/About"
 import Team from "../../components/pages/Team";
 import Tabs from './Tabs';
-import { members, categories } from './Tabs/memberData';
+import { members, categories } from '../../data/memberData';
 
 const team = () => {
   return (
