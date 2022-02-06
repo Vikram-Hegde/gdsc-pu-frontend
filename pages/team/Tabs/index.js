@@ -1,12 +1,12 @@
 import styles from './style.module.css';
 import { useState } from 'react';
 
-export default function Team({members, categories}) {
+export default function Team({ members, categories }) {
 	let [activeCategory, setActiveCategory] = useState('Management');
 	return (
 		<div className={styles.tabsWrapper}>
 			<div className={styles.tabs}>
-				{categories.map((category) => (
+				{categories && categories.map((category) => (
 					<button
 						className={category === activeCategory ? styles.active : ''}
 						onClick={() => setActiveCategory(category)}
@@ -17,7 +17,7 @@ export default function Team({members, categories}) {
 				))}
 			</div>
 			<div className={styles.displayMembers}>
-				{members.map(
+				{members && members.map(
 					(member) =>
 						member.dept === activeCategory && (
 							<div className={styles.member} key={member.name}>
