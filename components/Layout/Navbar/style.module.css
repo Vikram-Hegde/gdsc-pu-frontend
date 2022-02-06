@@ -86,7 +86,7 @@
     z-index: 99;
     position: fixed;
     right: -115%;
-    top: calc(10vh + 1px);
+    top: calc(10vh + 0.1px);
     flex-direction: column;
     background-color: var(--white);
     width: 100%;
