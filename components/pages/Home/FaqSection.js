@@ -13,6 +13,7 @@ export default function FaqSection() {
             layout="responsive"
             width={523}
             height={392}
+            alt='faq'
           />
         </div>
         <Accordian />

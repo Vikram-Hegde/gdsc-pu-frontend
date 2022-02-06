@@ -1,7 +1,7 @@
 import React from 'react'
 import aboutStyle from './about.module.css'
 
-const About = ({title, subtitle, aboutimg}) => {
+const About = ({ title, subtitle, aboutimg }) => {
     return (
         <div>
             <div className={aboutStyle.about}>
@@ -10,11 +10,12 @@ const About = ({title, subtitle, aboutimg}) => {
                     <p className={aboutStyle.aboutpara}>{subtitle}</p>
                 </div>
                 <div className={aboutStyle.rightabout}>
-                    <img className={aboutStyle.aboutimg} src={aboutimg} alt="" />
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img className={aboutStyle.aboutimg} src={aboutimg} alt={title} />
                 </div>
-            </div>    
+            </div>
         </div>
-    
+
     )
 }
 

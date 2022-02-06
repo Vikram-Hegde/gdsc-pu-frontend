@@ -1,35 +1,34 @@
 .main {
     display: flex;
-    height: 90vh;
+    height: 100vh;
 }
 
 .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex: 50%;
+    align-items: start;
+    /* text-align: center; */
+    width: 50%;
 }
 
 
 .leftimg{ 
-    height: 150px;
-    margin-bottom: 20px;
+    width: 120px;
 }
 
 .title {
-    font-family: "GoogleSans-b";
     font-size: var(--l-font);
+    font-weight: semi-bold;
     color: var(--black);
-    margin: 20px 0;
+    margin: 12px 0;
 }
 
 
 .mob_title {
     display: none;
-    font-family: "GoogleSans-b";
     font-size: var(--l-font);
+    font-weight: semi-bold;
     color: var(--black);
 }
 
@@ -37,25 +36,23 @@
     font-family: "GoogleSans-m";
     font-size: var(--m-font);
     color: var(--gray);
-    margin-top: 10px;
-    line-height: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 8px;
 }
 
 .right {
     display: flex;
-    flex: 50%;
-    margin: 50px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 .rightimg {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 
-@media screen and (max-width:1200px) {
+/* @media screen and (max-width:1200px) {
     .main {
        flex-direction: column;
        margin: 30px 0;
@@ -77,20 +74,40 @@
     .leftimg{ 
         height: 75px;
     }
-}    
+}     */
 
 
     
-@media screen and (max-width:720px) {
+@media screen and (max-width:768px) {
+    .main {
+        flex-direction: column-reverse;
+        justify-content: center;
+     }
     .title {
         display: none;
     }
 
     .mob_title {
         display: block;
+        margin: 12px 0;
     }
+    .left,.right{
+        width: 100%;
+    }
+    .left{
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+}
 
-    .right {
-        margin: 0;
+@media screen and (max-width:480px) {
+    .leftimg{ 
+        width: 80px;
+        margin:4px;
+    }
+    .rightimg{ 
+        width: 90%;
+        margin:4px;
     }
 }

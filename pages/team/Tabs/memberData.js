@@ -115,8 +115,8 @@ export const members = [
 	},
 	{
 		name: 'Chandan',
-		dept: 'Mentor',
-		pos: 'Cloud Computing',
+		dept: 'Tech',
+		pos: 'AI/ML Developer',
 		img: 'https://drive.google.com/uc?id=1pSytulz0sYbte-qDSApD3oKGNz9Hn7vx',
 	},
 ];

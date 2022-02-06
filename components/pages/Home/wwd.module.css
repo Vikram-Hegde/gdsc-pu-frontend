@@ -10,7 +10,7 @@
     margin:40px 70px 70px 0;
   }
 .menu p{
-    font-size: var(--m-font);
+    font-size: var(--s-font);
     padding-top: 2.5%;
     color: var(--gray);
 }
@@ -76,18 +76,18 @@
     padding-top: 2.5%;
 }
 
-@media (max-width:1024px) {
-    .menu p{
-        font-size: var(--s-font);
-    }
-}
 
 @media (max-width:768px) {
     .menu li{
-        width: 100%;
-        margin: 20px 0;
+        width: 45%;
+        margin: 16px;
       }
-    .menu p{
-        font-size: var(--s-font);
-    }
+   
+}
+@media (max-width:480px) {
+    .menu li{
+        width: 100%;
+        margin: 16px 0;
+      }
+   
 }

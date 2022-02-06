@@ -4,18 +4,20 @@ import heroStyle from "./hero.module.css"
 
 
 
-const Hero = ({title, mobtitle, subtitle, logosource, heroimg}) => {
+const Hero = ({ title, mobtitle, subtitle, logosource, heroimg }) => {
     return (
         <div className={heroStyle.main}>
             <div className={heroStyle.left}>
-               <img className={heroStyle.leftimg} src={logosource}/>
+                {/*  eslint-disable-next-line @next/next/no-img-element */}
+                <img className={heroStyle.leftimg} src={logosource} alt={title} />
                 <span className={heroStyle.title}>{title}</span>
                 <span className={heroStyle.mob_title}>{mobtitle}</span>
                 <p className={heroStyle.para}>{subtitle}</p>
-                <Button text="Join Us" variant="primary"/>
+                <Button text="Join Us" variant="primary" />
             </div>
             <div className={heroStyle.right}>
-                <img className={heroStyle.rightimg} src={heroimg} alt="" />
+                {/*  eslint-disable-next-line @next/next/no-img-element */}
+                <img className={heroStyle.rightimg} src={heroimg} alt={title} />
             </div>
         </div>
     )

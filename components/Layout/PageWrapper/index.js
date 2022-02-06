@@ -7,10 +7,10 @@ import style from "./style.module.css";
 const PageWrapper = ({ children, title, description }) => {
   return (
     <>
+      <Navbar />
       <div className={style.outer}>
         <div className={style.inner}>
           <Meta title={title} description={description} />
-          <Navbar />
           {children}
         </div>
       </div>

@@ -1,9 +1,14 @@
 .header {
-  width: 100%;
-  height: 100px;
+  width: 90%;
+  height: 10vh;
   display: flex;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   justify-content: center;
   border-bottom: 1px solid var(--gray);
+  background-color: var(--white);
+  z-index: 99;
 }
 
 .logoWrapper {
@@ -80,12 +85,12 @@
   .navMenu {
     z-index: 99;
     position: fixed;
-    right: -100%;
-    top: 102px;
+    right: -115%;
+    top: calc(10vh + 1px);
     flex-direction: column;
     background-color: var(--white);
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
