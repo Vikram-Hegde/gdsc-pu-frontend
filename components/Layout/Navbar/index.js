@@ -28,23 +28,21 @@ const Navbar = () => {
         <Link href="/" passHref>
           <div className={style.logoWrapper}>
             <div className={style.logoLeft}>
-              <Image
+              <img
                 src="/assets/icons/gdsc_logo.png"
                 layout="intrinsic"
                 objectFit="contain"
                 alt="GDSC Logo"
                 width="350px"
-                height="250px"
               />
             </div>
             <div className={style.logoLeftMobile}>
-              <Image
+              <img
                 src="/assets/icons/gdsc_logo_single.png"
                 layout="intrinsic"
                 objectFit="contain"
                 alt="GDSC Logo"
                 width="50px"
-                height="20px"
               />
             </div>
             {/* <div className={style.logoRight}>
@@ -56,9 +54,8 @@ const Navbar = () => {
           </div>
         </Link>
         <ul
-          className={`${style.navMenu + " "} ${
-            open ? style.navMenuActive : ""
-          }`}
+          className={`${style.navMenu + " "} ${open ? style.navMenuActive : ""
+            }`}
         >
           <div className={style.mobileNavMenuWrapper}>
             {/* <div className={style.mobileNavbarWrapper}>
@@ -107,10 +104,8 @@ const Navbar = () => {
                   <a className={style.navLink}>Our Team</a>
                 </Link>
               </li>
-              <li className={style.navItem} onClick={linkCloseMenu}>
-                <Link href="/" passHref>
-                  <Button text="Join Us" variant="primary" />
-                </Link>
+              <li className={style.navItem}>
+                <Button type='link' href='https://rebrand.ly/gdsc-pu-links' text="Join Us" variant="primary" />
               </li>
             </div>
           </div>

@@ -19,7 +19,7 @@ export default function Home() {
         />
         <About 
           title="About GDSC"
-          subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi alias non culpa dolore repellendus quidem impedit blanditiis mollitia officiis unde quos hic, dolorum nisi quisquam? Animi cumque ut ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos atque quam fuga laborum. Quo similique facere culpa eaque quasi facilis officiis ipsa vero modi repellat possimus eius pariatur, vel odit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora saepe ut quia mollitia corrupti eaque in voluptatem temporibus quo id. Illo doloribus blanditiis debitis officiis pariatur rem saepe impedit iusto!"
+          subtitle="A community of Developers, Designers and Programmers who grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community."
           aboutimg="/assets/illustrations/blogging.png"
         />
         <WhatWeDo/>

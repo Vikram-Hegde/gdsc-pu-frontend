@@ -3,25 +3,25 @@ import { useState } from "react";
 
 const qa = [
 	{
-		question: "Lorem ipsum dolor emet",
+		question: "Who can join GDSC PU?",
 		answer:
-			"lorem ipsum dolor emet, lorem dolor emet ipsum. Dolor emet ipsum emet",
+			"Any Student currently enrolled in a UG/PG program in any college can join GDSC PU.",
 	},
 	{
-		question: "Lorem ipsum dolor emet",
+		question: "How can I join GDSC PU?",
 		answer:
-			"lorem ipsum dolor emet, lorem dolor emet ipsum. Dolor emet ipsum emet",
+			"Join the GDSC PU Chapter on GDSC Community Platform. Also join the GDSC PU Discord Server to never miss an update.",
 	},
-	{
-		question: "Lorem ipsum dolor emet",
-		answer:
-			"lorem ipsum dolor emet, lorem dolor emet ipsum. Dolor emet ipsum emet",
-	},
-	{
-		question: "Lorem ipsum dolor emet",
-		answer:
-			"lorem ipsum dolor emet, lorem dolor emet ipsum. Dolor emet ipsum emet",
-	},
+	// {
+	// 	question: "Lorem ipsum dolor emet",
+	// 	answer:
+	// 		"lorem ipsum dolor emet, lorem dolor emet ipsum. Dolor emet ipsum emet",
+	// },
+	// {
+	// 	question: "Lorem ipsum dolor emet",
+	// 	answer:
+	// 		"lorem ipsum dolor emet, lorem dolor emet ipsum. Dolor emet ipsum emet",
+	// },
 ];
 
 export default function Accordian() {

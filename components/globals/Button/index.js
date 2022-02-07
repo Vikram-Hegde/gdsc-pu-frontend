@@ -7,7 +7,25 @@ const Button = ({
   type = "button",
   onclick,
   disabled = false,
+  href,
 }) => {
+  if (type === 'link') {
+    return (
+      <Link href={href} passHref >
+        <a className={[
+          style.btn,
+          disabled == "true"
+            ? style.btnSecondary
+            : variant == "primary"
+              ? style.btnPrimary
+              : style.btnSecondary,
+        ].join(" ")}
+          target="_blank"
+          rel="noopener noreferrer"
+        >{text}</a>
+      </Link>
+    );
+  }
   return (
     <button
       className={[
@@ -15,8 +33,8 @@ const Button = ({
         disabled == "true"
           ? style.btnSecondary
           : variant == "primary"
-          ? style.btnPrimary
-          : style.btnSecondary,
+            ? style.btnPrimary
+            : style.btnSecondary,
       ].join(" ")}
       type={type}
       onClick={onclick}

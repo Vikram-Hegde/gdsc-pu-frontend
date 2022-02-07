@@ -12,17 +12,20 @@
 
 .footerLogo {
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 1rem;
 }
 
 .footerLogoText {
   font-size: clamp(var(--s-font), 5vw, var(--m-font));
   line-height: 1;
+  text-align: center;
 }
 
 .footerLogoText > small {
-  font-size: clamp(var(--xs-font), 5vw, var(--s-font));
+  font-size: var(--xs-font);
   display: inline-block;
   margin-top: 0.5rem;
 }
@@ -48,6 +51,7 @@
 
 .footerLinksX {
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -79,6 +83,7 @@
 .footerHead {
   margin-bottom: 1rem;
   font-size: clamp(var(--xs-font), 3vw, var(--m-font));
+  text-align: center;
 }
 
 .footerInput {

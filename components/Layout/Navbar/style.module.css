@@ -13,6 +13,11 @@
 
 .logoWrapper {
   display: flex;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.logoWrapper:hover {
+  filter:brightness(1.2);
 }
 .logoLeft {
   margin-right: 5px;

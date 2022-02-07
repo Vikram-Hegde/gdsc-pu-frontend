@@ -30,7 +30,7 @@
 	font-size: var(--s-font);
 	color:var(--gray);
 	margin-left: 1rem;
-	max-width: 300px;
+	max-width: 95%;
 	margin-bottom: 0.8rem;
 }
 

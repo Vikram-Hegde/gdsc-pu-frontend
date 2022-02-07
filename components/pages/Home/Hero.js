@@ -13,7 +13,7 @@ const Hero = ({ title, mobtitle, subtitle, logosource, heroimg }) => {
                 <span className={heroStyle.title}>{title}</span>
                 <span className={heroStyle.mob_title}>{mobtitle}</span>
                 <p className={heroStyle.para}>{subtitle}</p>
-                <Button text="Join Us" variant="primary" />
+                <Button type='link' href={'https://rebrand.ly/gdsc-pu-links'} text="Join Us" variant="primary" />
             </div>
             <div className={heroStyle.right}>
                 {/*  eslint-disable-next-line @next/next/no-img-element */}

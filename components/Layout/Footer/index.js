@@ -11,6 +11,7 @@ const Footer = () => {
             layout="fixed"
             width={50}
             height={25}
+            alt="GDSC Logo"
           />
           <div className={styles.footerLogoText}>
             Google Developer Students Club
@@ -44,7 +45,7 @@ const Footer = () => {
             </ul>
           </div> */}
           <div className={styles.footerSocial}>
-            <div className={styles.footerHead}>Social Media</div>
+            <div className={styles.footerHead}>Follow Us on Socials</div>
             <div className={styles.footerLinksX}>
               <a
                 target="_blank"

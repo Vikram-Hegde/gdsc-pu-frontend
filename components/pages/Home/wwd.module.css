@@ -2,12 +2,13 @@
     display: flex;
     flex: 1;
     flex-wrap: wrap;
+    justify-content: start;
 }
 .menu li{
     display: inline-block;
-    width: 25%;
+    width: 30%;
     height: 199px;
-    margin:40px 70px 70px 0;
+    margin:24px 16px 24px 0px;
   }
 .menu p{
     font-size: var(--s-font);
@@ -80,7 +81,7 @@
 @media (max-width:768px) {
     .menu li{
         width: 45%;
-        margin: 16px;
+        margin: 16px 18px 16px 0px;
       }
    
 }
